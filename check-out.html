@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/check-out.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container px-md-5 px-3 py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <a href="index.html" class="header-logo">
+                <h4>Katrina<span class="ms-2 text-blue-1">Tours</span></h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-menu">
+              <div class="menu">
+                <ul class="menu-nav text-dark-1">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tours.html">Tours</a></li>
+                  <li>
+                    <a href="tarnsporta.html">Transportation</a>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="position-relative d-none d-xl-block">
+                    <a href="cart.html" class="active"> Cart </a>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto position-relative d-none d-md-block">
+                <div
+                  class="drop-down d-flex align-items-center text-14 text-dark-1"
+                >
+                  <img
+                    src="assets/img/united-kingdom.png"
+                    alt=""
+                    class="selected-img me-2"
+                  />
+                  <span class="selected">English</span>
+                  <i class="fa-solid fa-chevron-down ms-3 text-7"></i>
+                </div>
+                <ul class="list bg-white shadow"></ul>
+              </div>
+              <div class="col-auto d-xl-none d-block">
+                <a href="cart.html">
+                  <i
+                    class="fa-solid fa-basket-shopping text-20 position-relative"
+                  >
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="w-1 h-20 bg-black-20"></div>
+              </div>
+              <!-- <div class="col-auto d-none d-xl-block">
+                <a href="profile.html" class="d-flex align-items-center">
+                  <img
+                    src="assets/img/4.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    width="40px"
+                  />
+                  <div class="text-18 fw-500 ms-3">Abdullah Mohamed</div>
+                </a>
+              </div> -->
+              <div class="col-auto d-none d-xl-block">
+                <a
+                  href="login.html"
+                  class="button bg-blue-1 px-4 fw-400 text-14 py-3 text-white"
+                >
+                  Sign in / Sign up
+                </a>
+              </div>
+              <div class="col-auto d-xl-none d-flex align-items-center">
+                <a href="profile.html"
+                  ><i class="fa-regular fa-circle-user me-3"></i
+                ></a>
+                <button class="hamburger-menu btn p-0">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home-section position-relative">
+      <div class="masthead__bg bg-dark-3">
+        <img src="assets/img/bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="pagetitle mt-5">
+          <h2 class="text-white text-26">Check Out</h2>
+          <nav>
+            <ol class="breadcrumb text-15">
+              <li class="breadcrumb-item text-light-1">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item text-light-1">
+                <a href="carts.html">Shopping Cart</a>
+              </li>
+              <li class="breadcrumb-item text-white">Check Out</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="py-70">
+      <div class="container">
+        <div class="row justify-content-between align-items-center gy-4">
+          <div class="col-lg-5">
+            <div class="payment shadow p-md-4 p-3 rounded-2">
+              <div class="d-flex justify-content-between pb-3">
+                <h3>Total Price</h3>
+                <div class="fw-500 text-22">$999</div>
+              </div>
+              <ul class="nav nav-tabs border rounded-2">
+                <li class="nav-item">
+                  <button
+                    class="nav-link active w-100 px-4 py-3"
+                    id="card-btn"
+                    data-bs-toggle="pill"
+                    data-bs-target="#credit-card"
+                    type="button"
+                    role="tab"
+                    aria-controls="credit-card"
+                    aria-selected="true"
+                  >
+                    <div class="d-flex">
+                      <div class="mt-2">
+                        <div class="check-box"></div>
+                      </div>
+                      <div class="ms-3">
+                        <div class="text-20 fw-500">Credit or debit card</div>
+                        <div class="d-flex">
+                          <img src="assets/img/visa.svg" alt="" />
+                          <img src="assets/img/mastercard.svg" alt="" />
+                          <img src="assets/img/amex.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link w-100 px-4 py-3"
+                    id="paypal-btn"
+                    data-bs-toggle="pill"
+                    data-bs-target="#paypal"
+                    type="button"
+                    role="tab"
+                    aria-controls="paypal"
+                    aria-selected="false"
+                  >
+                    <div class="d-flex">
+                      <div class="mt-2">
+                        <div class="check-box"></div>
+                      </div>
+                      <div class="ms-3">
+                        <div class="text-20 fw-500">Paypal</div>
+                        <img src="assets/img/paypal.svg" alt="" />
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link w-100 px-4 py-3 border-bottom-none"
+                    id="cash-btn"
+                    data-bs-toggle="pill"
+                    data-bs-target="#cash"
+                    type="button"
+                    role="tab"
+                    aria-controls="cash"
+                    aria-selected="false"
+                  >
+                    <div class="d-flex">
+                      <div class="mt-2">
+                        <div class="check-box"></div>
+                      </div>
+                      <div class="ms-3">
+                        <div class="text-20 fw-500">Cash</div>
+                        <img src="assets/img/cash.svg" alt="" />
+                      </div>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-content p-4 rounded-2 shadow">
+              <div
+                class="tab-pane fade show active"
+                id="credit-card"
+                role="tabpanel"
+              >
+                <form action="" method="post">
+                  <div
+                    class="row gy-4 justify-content-between align-items-center"
+                  >
+                    <div class="col-12">
+                      <label for="card-number" class="fw-500 text-18 mb-2"
+                        >Card Holder</label
+                      >
+                      <input
+                        type="text"
+                        name="card-number"
+                        id="card-number"
+                        placeholder="Enter Name...."
+                        class="py-1 px-3 border h-auto rounded-1"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="card-number" class="fw-500 text-18 mb-2"
+                        >Card Number</label
+                      >
+                      <input
+                        type="number"
+                        name="card-number"
+                        id="card-number"
+                        placeholder="################"
+                        class="py-1 px-3 border h-auto rounded-1"
+                      />
+                    </div>
+                    <div class="col-md-5">
+                      <label for="card-date" class="fw-500 text-18 mb-2"
+                        >Expiry date</label
+                      >
+                      <input
+                        type="number"
+                        name="card-date"
+                        id="card-date"
+                        placeholder="MM / YY"
+                        class="py-1 px-3 border h-auto rounded-1"
+                      />
+                    </div>
+                    <div class="col-md-5">
+                      <label for="card-code" class="fw-500 text-18 mb-2"
+                        >Security code</label
+                      >
+                      <input
+                        type="number"
+                        maxlength="4"
+                        name="card-code"
+                        id="card-code"
+                        placeholder="Cvv"
+                        class="py-1 px-3 border h-auto rounded-1"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="button py-3 px-3 dark-1 bg-blue-1 text-white border-radius-0 w-100"
+                      >
+                        BUY NOW
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="paypal" role="tabpanel">
+                <form action="" method="post">
+                  <div
+                    class="row justify-content-center gy-4 text-center flex-column"
+                  >
+                    <div class="col">
+                      <h3>Paypal</h3>
+                    </div>
+                    <div class="col">
+                      <p>pay now with paypal</p>
+                    </div>
+                    <div class="col">
+                      <button
+                        class="button py-3 px-3 dark-1 bg-blue-1 text-white border-radius-0 w-100"
+                      >
+                        Continue purchase
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="cash" role="tabpanel">
+                <form action="" method="post">
+                  <div
+                    class="row justify-content-center gy-4 text-center flex-column"
+                  >
+                    <div class="col">
+                      <h3 class="">Cash</h3>
+                    </div>
+                    <div class="col">
+                      <p>pay cash in tour</p>
+                    </div>
+                    <div class="col">
+                      <button
+                        class="button py-3 px-3 dark-1 bg-blue-1 text-white border-radius-0 w-100"
+                      >
+                        Confirm
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light-2">
+      <div class="container">
+        <div class="py-70">
+          <div class="row justify-content-xl-between justify-content-start">
+            <div class="col-xl-4 col-lg-6">
+              <h4>Katrina <span class="text-blue-1">Tours</span></h4>
+              <div class="row justify-content-between pt-3">
+                <div class="col">
+                  <div class="text-12">Toll Free Customer Care</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >+(1) 123 456 7890</a
+                  >
+                </div>
+                <div class="col">
+                  <div class="text-12">Need live support?</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >Katrinatours277@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="row gy-3 pt-4">
+                <div class="col-12">
+                  <h5 class="text-14 fw-500">Your all-in-one travel app</h5>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-apple text-26"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">
+                        Download on the
+                      </div>
+                      <div class="text-15 lh-14 fw-500">Apple Store</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-google-play text-24"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">Get in on</div>
+                      <div class="text-15 lh-14 fw-500">Google Play</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-16 fw-500 mb-2">Follow us on social media</h5>
+                <div class="row gx-3 align-items-center">
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-twitter text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin-in text-14"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h5 class="text-16 fw-500 mb-3">Get Updates &amp; More</h5>
+                  <div
+                    class="single-field position-relative d-flex justify-content-end align-items-center pb-4"
+                  >
+                    <input
+                      type="email"
+                      class="bg-white"
+                      placeholder="Your Email"
+                    />
+                    <button
+                      class="position-absolute pe-3 text-15 fw-500 underline text-dark-1"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Company</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">About Us</a>
+                    <a href="#" class="pt-2">Blog</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Support</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Contact</a>
+                    <a href="#" class="pt-2">Privacy Policy</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Other Services</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Offers</a>
+                    <a href="#" class="pt-2">Tour List</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/jquery-3.6.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/check-out.js"></script>
+  </body>
+</html>

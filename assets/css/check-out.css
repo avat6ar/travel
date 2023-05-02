@@ -1,0 +1,33 @@
+.payment img {
+  width: 35px;
+}
+.payment img:not(:last-child) {
+  margin-right: 10px;
+}
+.nav.nav-tabs {
+  flex-direction: column;
+}
+.nav-tabs .nav-link {
+  border: none;
+  color: var(--color-dark-1);
+}
+.nav-tabs .nav-link {
+  border-bottom: 1px solid var(--color-border) !important;
+}
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+}
+.nav-tabs .nav-link.border-bottom-none {
+  border-bottom: none !important;
+}
+.payment .nav-tabs .nav-link .check-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: #fff;
+}
+.nav-tabs .nav-link.active .check-box {
+  border-color: #0ead0e;
+  border-width: 5px;
+}

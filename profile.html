@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/profile.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container px-md-5 px-3 py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <a href="index.html" class="header-logo">
+                <h4>Katrina<span class="ms-2 text-blue-1">Tours</span></h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-menu">
+              <div class="menu">
+                <ul class="menu-nav text-dark-1">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tours.html">Tours</a></li>
+                  <li><a href="tarnsporta.html">Transportation</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="position-relative d-none d-xl-block">
+                    <a href="cart.html"> Cart </a>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto position-relative d-none d-md-block">
+                <div
+                  class="drop-down d-flex align-items-center text-14 text-dark-1"
+                >
+                  <img
+                    src="assets/img/united-kingdom.png"
+                    alt=""
+                    class="selected-img me-2"
+                  />
+                  <span class="selected">English</span>
+                  <i class="fa-solid fa-chevron-down ms-3 text-7"></i>
+                </div>
+                <ul class="list bg-white shadow"></ul>
+              </div>
+              <div class="col-auto d-xl-none d-block">
+                <a href="cart.html">
+                  <i
+                    class="fa-solid fa-basket-shopping text-20 position-relative"
+                  >
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="w-1 h-20 bg-black-20"></div>
+              </div>
+              <!-- <div class="col-auto d-none d-xl-block">
+                <a href="profile.html" class="d-flex align-items-center">
+                  <img
+                    src="assets/img/4.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    width="40px"
+                  />
+                  <div class="text-18 fw-500 ms-3">Abdullah Mohamed</div>
+                </a>
+              </div> -->
+              <div class="col-auto d-none d-xl-block">
+                <a
+                  href="login.html"
+                  class="button bg-blue-1 px-4 fw-400 text-14 py-3 text-white"
+                >
+                  Sign in / Sign up
+                </a>
+              </div>
+              <div class="col-auto d-xl-none d-flex align-items-center">
+                <a href="profile.html"
+                  ><i class="fa-regular fa-circle-user me-3"></i
+                ></a>
+                <button class="hamburger-menu btn p-0">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home-section position-relative">
+      <div class="masthead__bg bg-dark-3">
+        <img src="assets/img/bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="pagetitle mt-5">
+          <h2 class="text-white text-26">Profile</h2>
+          <nav>
+            <ol class="breadcrumb text-15">
+              <li class="breadcrumb-item text-light-1">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item text-white">Profile</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="py-70">
+      <div class="container">
+        <div class="profile bg-light-2 shadow">
+          <div class="row justify-content-between py-3 px-md-4 px-3">
+            <div class="col-xl-4">
+              <div class="card border-0 mb-xl-0 mb-3">
+                <div
+                  class="card-body profile-card pt-4 d-flex flex-column align-items-center"
+                >
+                  <img
+                    src="assets/img/xperson_4.jpg.pagespeed.ic.X36VI035mo.webp"
+                    alt=""
+                    width="250px"
+                    class="rounded-circle"
+                  />
+                  <button class="button mt-3 blue-1 border py-2 px-3">
+                    Change Image Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="card border-0">
+                <div class="card-body p-3">
+                  <ul class="nav nav-tabs border-bottom">
+                    <li class="nav-item">
+                      <button
+                        class="nav-link active"
+                        id="overview-tap"
+                        data-bs-toggle="pill"
+                        data-bs-target="#profile-overview"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-overview"
+                        aria-selected="true"
+                      >
+                        Overview
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button
+                        class="nav-link"
+                        id="edit-tap"
+                        data-bs-toggle="pill"
+                        data-bs-target="#profile-edit"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-edit"
+                        aria-selected="false"
+                      >
+                        Edit Profile
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button
+                        class="nav-link"
+                        id="change-password"
+                        data-bs-toggle="pill"
+                        data-bs-target="#profile-change-password"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile-change-password"
+                        aria-selected="false"
+                      >
+                        Change Password
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <a href="invoice.html" class="nav-link" target="_blank">Invoice</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-2">
+                    <div
+                      class="tab-pane fade profile-overview show active"
+                      id="profile-overview"
+                      role="tabpanel"
+                    >
+                      <h5 class="card-title py-3 mb-2">Profile Details</h5>
+                      <div class="row mb-3">
+                        <div class="col-lg-3 col-md-4 label">Full Name</div>
+                        <div class="col-lg-9 col-md-8">Abdullah Mohamed</div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-3 col-md-4 label">Country</div>
+                        <div class="col-lg-9 col-md-8">USA</div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-3 col-md-4 label">Phone</div>
+                        <div class="col-lg-9 col-md-8">12345678910</div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-lg-3 col-md-4 label">Email</div>
+                        <div class="col-lg-9 col-md-8">assacac@gmail.com</div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade profile-edit pt-3"
+                      id="profile-edit"
+                      role="tabpanel"
+                    >
+                      <form>
+                        <div class="row mb-3">
+                          <label
+                            for="fullName"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Full Name</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="fullName"
+                              type="text"
+                              class="form-control"
+                              id="fullName"
+                              value="Abdullah Mohamed"
+                            />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label
+                            for="Country"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Country</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="country"
+                              type="text"
+                              class="form-control"
+                              id="Country"
+                              value="USA"
+                            />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label
+                            for="Phone"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Phone</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="phone"
+                              type="text"
+                              class="form-control"
+                              id="Phone"
+                              value="12345678910"
+                            />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label
+                            for="Email"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Email</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="email"
+                              type="email"
+                              class="form-control"
+                              id="Email"
+                              value="yguyc@gmail.com"
+                            />
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <button
+                            type="submit"
+                            class="button dark-1 bg-blue-1 md text-white"
+                          >
+                            Save Changes
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade profile-change-password pt-3"
+                      id="profile-change-password"
+                      role="tabpanel"
+                    >
+                      <form>
+                        <div class="row mb-3">
+                          <label
+                            for="currentPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Current Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="password"
+                              type="password"
+                              class="form-control"
+                              id="currentPassword"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <label
+                            for="newPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >New Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="newpassword"
+                              type="password"
+                              class="form-control"
+                              id="newPassword"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <label
+                            for="renewPassword"
+                            class="col-md-4 col-lg-3 col-form-label"
+                            >Re-enter New Password</label
+                          >
+                          <div class="col-md-8 col-lg-9">
+                            <input
+                              name="renewpassword"
+                              type="password"
+                              class="form-control"
+                              id="renewPassword"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="text-center">
+                          <button
+                            type="submit"
+                            class="button dark-1 bg-blue-1 md text-white"
+                          >
+                            Change Password
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light-2">
+      <div class="container">
+        <div class="py-70">
+          <div class="row justify-content-xl-between justify-content-start">
+            <div class="col-xl-4 col-lg-6">
+              <h4>Katrina <span class="text-blue-1">Tours</span></h4>
+              <div class="row justify-content-between pt-3">
+                <div class="col">
+                  <div class="text-12">Toll Free Customer Care</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >+(1) 123 456 7890</a
+                  >
+                </div>
+                <div class="col">
+                  <div class="text-12">Need live support?</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >Katrinatours277@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="row gy-3 pt-4">
+                <div class="col-12">
+                  <h5 class="text-14 fw-500">Your all-in-one travel app</h5>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-apple text-26"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">
+                        Download on the
+                      </div>
+                      <div class="text-15 lh-14 fw-500">Apple Store</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-google-play text-24"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">Get in on</div>
+                      <div class="text-15 lh-14 fw-500">Google Play</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-16 fw-500 mb-2">Follow us on social media</h5>
+                <div class="row gx-3 align-items-center">
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-twitter text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin-in text-14"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h5 class="text-16 fw-500 mb-3">Get Updates &amp; More</h5>
+                  <div
+                    class="single-field position-relative d-flex justify-content-end align-items-center pb-4"
+                  >
+                    <input
+                      type="email"
+                      class="bg-white"
+                      placeholder="Your Email"
+                    />
+                    <button
+                      class="position-absolute pe-3 text-15 fw-500 underline text-dark-1"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Company</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">About Us</a>
+                    <a href="#" class="pt-2">Blog</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Support</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Contact</a>
+                    <a href="#" class="pt-2">Privacy Policy</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Other Services</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Offers</a>
+                    <a href="#" class="pt-2">Tour List</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/jquery-3.6.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

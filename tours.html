@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/tours.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container px-md-5 px-3 py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <a href="index.html" class="header-logo">
+                <h4>Katrina<span class="ms-2 text-blue-1">Tours</span></h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-menu">
+              <div class="menu">
+                <ul class="menu-nav text-dark-1">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tours.html" class="active">Tours</a></li>
+                  <li>
+                    <a href="tarnsporta.html">Transportation</a>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li class="position-relative d-none d-xl-block">
+                    <a href="cart.html"> Cart </a>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto position-relative d-none d-md-block">
+                <div
+                  class="drop-down d-flex align-items-center text-14 text-dark-1"
+                >
+                  <img
+                    src="assets/img/united-kingdom.png"
+                    alt=""
+                    class="selected-img me-2"
+                  />
+                  <span class="selected">English</span>
+                  <i class="fa-solid fa-chevron-down ms-3 text-7"></i>
+                </div>
+                <ul class="list bg-white shadow"></ul>
+              </div>
+              <div class="col-auto d-xl-none d-block">
+                <a href="cart.html">
+                  <i
+                    class="fa-solid fa-basket-shopping text-20 position-relative"
+                  >
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="w-1 h-20 bg-black-20"></div>
+              </div>
+              <!-- <div class="col-auto d-none d-xl-block">
+                <a href="profile.html" class="d-flex align-items-center">
+                  <img
+                    src="assets/img/4.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    width="40px"
+                  />
+                  <div class="text-18 fw-500 ms-3">Abdullah Mohamed</div>
+                </a>
+              </div> -->
+              <div class="col-auto d-none d-xl-block">
+                <a
+                  href="login.html"
+                  class="button bg-blue-1 px-4 fw-400 text-14 py-3 text-white"
+                >
+                  Sign in / Sign up
+                </a>
+              </div>
+              <div class="col-auto d-xl-none d-flex align-items-center">
+                <a href="profile.html"
+                  ><i class="fa-regular fa-circle-user me-3"></i
+                ></a>
+                <button class="hamburger-menu btn p-0">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home-section position-relative">
+      <div class="masthead__bg bg-dark-3">
+        <img src="assets/img/bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="pagetitle mt-5">
+          <h2 class="text-white text-26">Tours</h2>
+          <nav>
+            <ol class="breadcrumb text-15">
+              <li class="breadcrumb-item text-light-1">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item text-white">Tours</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="pt-70 pb-4 bg-light-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-3">
+              <h1>Tours in Sharm-Elsheikh</h1>
+            </div>
+            <div class="bg-white p-3 rounded-1 mt-30">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="d-flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22px"
+                      height="22px"
+                      viewBox="0 0 64 64"
+                      stroke-width="3"
+                      stroke="var(--color-light-1)"
+                      fill="none"
+                      class="mt-1"
+                    >
+                      <path
+                        d="M31.56,56.51S14.41,37.67,14.41,25.39c0-14.49,9.48-17.84,17.15-17.84,7.06,0,16.13,3.79,16.13,17.84C47.69,38.07,31.56,56.51,31.56,56.51Z"
+                      />
+                      <circle cx="31.05" cy="22.24" r="6.93" />
+                    </svg>
+                    <div class="col">
+                      <div class="ms-2">
+                        <h4 class="text-15 fw-500 lh-16">Location</h4>
+                        <div class="text-15 text-light-1 lh-16">
+                          <input
+                            type="search"
+                            name=""
+                            id=""
+                            placeholder="Where are you going?"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button
+                    class="button dark-1 py-2 px-3 rounded-1 bg-blue-1 text-white fw-normal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass text-18 me-2"></i>
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-5 pb-70">
+      <div class="container">
+        <div class="row gx-md-5">
+          <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <aside class="sidebar gy-4">
+              <div class="col no-border">
+                <h5 class="text-18 fw-500 mb-3">Category Types</h5>
+                <div class="sidebar-checkbox">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">Offers &amp; Discounts</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">Red Sea Trips</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">
+                          Historical &amp; Cultural
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">Safari &amp; Desert</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-30">
+                <h5 class="text-18 fw-500 mb-3">Price</h5>
+                <div class="row x-gap-10 y-gap-30">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="text-15 text-dark-1">
+                        <span class="js-lower">$0</span>
+                        -
+                        <span class="js-upper">$500</span>
+                      </div>
+                    </div>
+                    <div class="px-1">
+                      <div id="range-slider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="text-18 fw-500 mb-3">Duration</h5>
+                <div class="sidebar-checkbox">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">Below 1 hour</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">from 1 to 12 hours</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                      <div class="d-flex align-items-center">
+                        <input
+                          type="checkbox"
+                          name="name"
+                          class="form-check-input mt-0"
+                        />
+                        <div class="text-15 ms-2">1 Day trip</div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="text-15 text-light-1">99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-xl-9 col-lg-8">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="text-18 fw-500">1,000 Tours</div>
+              </div>
+              <div class="col-auto">
+                <div class="row">
+                  <div class="col-auto">
+                    <button
+                      class="button blue-1 py-2 px-4 rounded-5 bg-blue-1-05 text-15 text-blue-1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="me-2"
+                      >
+                        <g>
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            d="M11.95 7.95l-1.414 1.414L8 6.828 8 20H6V6.828L3.465 9.364 2.05 7.95 7 3l4.95 4.95zm10 8.1L17 21l-4.95-4.95 1.414-1.414 2.537 2.536L16 4h2v13.172l2.536-2.536 1.414 1.414z"
+                          ></path>
+                        </g>
+                      </svg>
+                      Sort
+                    </button>
+                  </div>
+                  <div class="col-auto d-xl-none d-block">
+                    <button
+                      class="button blue-1 py-2 px-4 rounded-5 bg-blue-1-05 text-15 text-blue-1"
+                      id="open-filter"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="me-2"
+                      >
+                        <g>
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            d="M11.95 7.95l-1.414 1.414L8 6.828 8 20H6V6.828L3.465 9.364 2.05 7.95 7 3l4.95 4.95zm10 8.1L17 21l-4.95-4.95 1.414-1.414 2.537 2.536L16 4h2v13.172l2.536-2.536 1.414 1.414z"
+                          ></path>
+                        </g>
+                      </svg>
+                      Filter
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-menu bg-white">
+              <div class="container h-100">
+                <div class="icon-close" id="close-filter">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <aside class="sidebar mt-5 position-relative">
+                  <div class="col no-border col">
+                    <h5 class="text-18 fw-500 mb-3">Category Types</h5>
+                    <div class="sidebar-checkbox">
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">
+                              Offers &amp; Discounts
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">Red Sea Trips</div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">
+                              Historical &amp; Cultural
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">Safari &amp; Desert</div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col pb-4">
+                    <h5 class="text-18 fw-500 mb-3">Price</h5>
+                    <div class="row x-gap-10 y-gap-30">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="text-15 text-dark-1">
+                            <span class="js-lower">$0</span>
+                            -
+                            <span class="js-upper">$500</span>
+                          </div>
+                        </div>
+                        <div class="px-0">
+                          <div id="range-slider"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-18 fw-500 mb-3">Duration</h5>
+                    <div class="sidebar-checkbox">
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">Below 1 hour</div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">from 1 to 12 hours</div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                      <div
+                        class="row align-items-center justify-content-between"
+                      >
+                        <div class="col-auto">
+                          <div class="d-flex align-items-center">
+                            <input
+                              type="checkbox"
+                              name="name"
+                              class="form-check-input mt-0"
+                            />
+                            <div class="text-15 ms-2">1 Day trip</div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="text-15 text-light-1">99</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+            <div class="border-top-light my-4"></div>
+            <div
+              class="row row-cols-lg-2 row-cols-md-2 row-cols-1 g-4 pt-3"
+              id="display-card"
+            ></div>
+            <div class="border-top-light mt-4 pt-4">
+              <div
+                class="row gy-3 gx-2 justify-content-lg-between justify-content-center"
+              >
+                <div class="col-auto">
+                  <button
+                    class="button blue-1 rounded-5 size-40"
+                    id="prev-card"
+                    disabled
+                  >
+                    <i class="fa-solid fa-chevron-left text-12"></i>
+                  </button>
+                </div>
+                <div class="col-md-auto">
+                  <div
+                    class="row g-3 align-items-center"
+                    id="page-numbers"
+                  ></div>
+                </div>
+                <div class="col-auto">
+                  <button
+                    class="button blue-1 rounded-5 size-40"
+                    id="next-card"
+                  >
+                    <i class="fa-solid fa-chevron-right text-12"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light-2">
+      <div class="container">
+        <div class="py-70">
+          <div class="row justify-content-xl-between justify-content-start">
+            <div class="col-xl-4 col-lg-6">
+              <h4>Katrina <span class="text-blue-1">Tours</span></h4>
+              <div class="row justify-content-between pt-3">
+                <div class="col">
+                  <div class="text-12">Toll Free Customer Care</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >+(1) 123 456 7890</a
+                  >
+                </div>
+                <div class="col">
+                  <div class="text-12">Need live support?</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >Katrinatours277@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="row gy-3 pt-4">
+                <div class="col-12">
+                  <h5 class="text-14 fw-500">Your all-in-one travel app</h5>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-apple text-26"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">
+                        Download on the
+                      </div>
+                      <div class="text-15 lh-14 fw-500">Apple Store</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-google-play text-24"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">Get in on</div>
+                      <div class="text-15 lh-14 fw-500">Google Play</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-16 fw-500 mb-2">Follow us on social media</h5>
+                <div class="row gx-3 align-items-center">
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-twitter text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin-in text-14"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h5 class="text-16 fw-500 mb-3">Get Updates &amp; More</h5>
+                  <div
+                    class="single-field position-relative d-flex justify-content-end align-items-center pb-4"
+                  >
+                    <input
+                      type="email"
+                      class="bg-white"
+                      placeholder="Your Email"
+                    />
+                    <button
+                      class="position-absolute pe-3 text-15 fw-500 underline text-dark-1"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Company</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">About Us</a>
+                    <a href="#" class="pt-2">Blog</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Support</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Contact</a>
+                    <a href="#" class="pt-2">Privacy Policy</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Other Services</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Offers</a>
+                    <a href="#" class="pt-2">Tour List</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="/assets/js/nouislider.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/tours.js"></script>
+  </body>
+</html>

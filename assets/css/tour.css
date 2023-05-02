@@ -1,0 +1,57 @@
+@import url(swiper-bundle.min.css);
+
+.mySwiper {
+  width: 100%;
+  height: 400px;
+}
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper2.swiper-backface-hidden .swiper-slide {
+  height: 80px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+.mySwiper2.swiper-backface-hidden .swiper-slide.swiper-slide-thumb-active {
+  border-color: var(--color-light-1);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  transition: all 0.3s ease-in-out;
+  left: 30px;
+}
+.swiper-button-next {
+  left: auto;
+  right: 30px;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+  .swiper-button-next i,
+  .swiper-button-prev i {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .border-md {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+}

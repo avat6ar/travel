@@ -1,0 +1,65 @@
+@import url(nouislider.min.css);
+.sidebar > *:not(.no-border) {
+  border-top: 1px solid var(--color-border);
+}
+.noUi-target {
+  height: 4px;
+  border: none;
+  outline: 1px solid rgba(0, 0, 0, 0.08);
+}
+.noUi-connect {
+  background-color: var(--color-blue-1) !important;
+  box-shadow: none !important;
+}
+.noUi-handle {
+  border-radius: 100%;
+  width: 20px !important;
+  height: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  border: 2px solid var(--color-blue-1);
+  box-shadow: 0 !important;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+.mainSearch .button-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.filter-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1100;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+.filter-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.sidebar-checkbox > *:not(:last-child) {
+  padding-bottom: 12px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: -25px 0;
+}
+.sidebar > * {
+  padding: 25px 0;
+}

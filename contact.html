@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container px-md-5 px-3 py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="d-flex align-items-center">
+              <a href="index.html" class="header-logo">
+                <h4>Katrina<span class="ms-2 text-blue-1">Tours</span></h4>
+              </a>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-menu">
+              <div class="menu">
+                <ul class="menu-nav text-dark-1">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tours.html">Tours</a></li>
+                  <li><a href="tarnsporta.html">Transportation</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html" class="active">Contact</a></li>
+                  <li class="position-relative d-none d-xl-block">
+                    <a href="cart.html"> Cart </a>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto position-relative d-none d-md-block">
+                <div
+                  class="drop-down d-flex align-items-center text-14 text-dark-1"
+                >
+                  <img
+                    src="assets/img/united-kingdom.png"
+                    alt=""
+                    class="selected-img me-2"
+                  />
+                  <span class="selected">English</span>
+                  <i class="fa-solid fa-chevron-down ms-3 text-7"></i>
+                </div>
+                <ul class="list bg-white shadow"></ul>
+              </div>
+              <div class="col-auto d-xl-none d-block">
+                <a href="cart.html">
+                  <i
+                    class="fa-solid fa-basket-shopping text-20 position-relative"
+                  >
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      <span class="text-white">0</span>
+                    </span>
+                  </i>
+                </a>
+              </div>
+              <div class="col-auto d-none d-md-block">
+                <div class="w-1 h-20 bg-black-20"></div>
+              </div>
+              <!-- <div class="col-auto d-none d-xl-block">
+                <a href="profile.html" class="d-flex align-items-center">
+                  <img
+                    src="assets/img/4.jpg"
+                    alt=""
+                    class="rounded-circle"
+                    width="40px"
+                  />
+                  <div class="text-18 fw-500 ms-3">Abdullah Mohamed</div>
+                </a>
+              </div> -->
+              <div class="col-auto d-none d-xl-block">
+                <a
+                  href="login.html"
+                  class="button bg-blue-1 px-4 fw-400 text-14 py-3 text-white"
+                >
+                  Sign in / Sign up
+                </a>
+              </div>
+              <div class="col-auto d-xl-none d-flex align-items-center">
+                <a href="profile.html"
+                  ><i class="fa-regular fa-circle-user me-3"></i
+                ></a>
+                <button class="hamburger-menu btn p-0">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home-section position-relative">
+      <div class="masthead__bg bg-dark-3">
+        <img src="assets/img/bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="pagetitle mt-5">
+          <h2 class="text-white text-26">Contact</h2>
+          <nav>
+            <ol class="breadcrumb text-15">
+              <li class="breadcrumb-item text-light-1">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item text-white">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="contact py-70" id="contact">
+      <div class="container">
+        <div class="heading text-center">
+          <h2>Contact <span> Us </span></h2>
+          <p>If you have any problem or any inquiries please contact us</p>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="title">
+              <h3>Contact detail</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+            <div class="content mb-4 mb-md-0">
+              <div class="info">
+                <i class="fas fa-mobile-alt"></i>
+                <h4 class="d-inline-block">
+                  PHONE :
+                  <br />
+                  <span>+12457836913 , +12457836913</span>
+                </h4>
+              </div>
+              <div class="info">
+                <i class="far fa-envelope"></i>
+                <h4 class="d-inline-block">
+                  EMAIL :
+                  <br />
+                  <span>bananatours18@gmail.com</span>
+                </h4>
+              </div>
+              <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4 class="d-inline-block">
+                  ADDRESS :<br />
+                  <span>Sharm-Elsheikh , Egypt</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                    name="subject"
+                    id="subject"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button
+                class="button py-3 px-3 dark-1 bg-blue-1 text-white mt-3 border-radius-0 w-100"
+                type="submit"
+              >
+                Send Now!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-light-2">
+      <div class="container">
+        <div class="py-70">
+          <div class="row justify-content-xl-between justify-content-start">
+            <div class="col-xl-4 col-lg-6">
+              <h4>Katrina <span class="text-blue-1">Tours</span></h4>
+              <div class="row justify-content-between pt-3">
+                <div class="col">
+                  <div class="text-12">Toll Free Customer Care</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >+(1) 123 456 7890</a
+                  >
+                </div>
+                <div class="col">
+                  <div class="text-12">Need live support?</div>
+                  <a href="" class="text-15 fw-500 text-dark-1 mt-5"
+                    >Katrinatours277@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="row gy-3 pt-4">
+                <div class="col-12">
+                  <h5 class="text-14 fw-500">Your all-in-one travel app</h5>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-apple text-26"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">
+                        Download on the
+                      </div>
+                      <div class="text-15 lh-14 fw-500">Apple Store</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto col-lg-6">
+                  <div
+                    class="d-flex align-items-center px-3 py-2 rounded-1 bg-white"
+                  >
+                    <i class="fa-brands fa-google-play text-24"></i>
+                    <div class="ms-3">
+                      <div class="text-12 lh-14 text-light-1">Get in on</div>
+                      <div class="text-15 lh-14 fw-500">Google Play</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-16 fw-500 mb-2">Follow us on social media</h5>
+                <div class="row gx-3 align-items-center">
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-twitter text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram text-14"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin-in text-14"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-3">
+                <div class="col-12">
+                  <h5 class="text-16 fw-500 mb-3">Get Updates &amp; More</h5>
+                  <div
+                    class="single-field position-relative d-flex justify-content-end align-items-center pb-4"
+                  >
+                    <input
+                      type="email"
+                      class="bg-white"
+                      placeholder="Your Email"
+                    />
+                    <button
+                      class="position-absolute pe-3 text-15 fw-500 underline text-dark-1"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Company</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">About Us</a>
+                    <a href="#" class="pt-2">Blog</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Support</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Contact</a>
+                    <a href="#" class="pt-2">Privacy Policy</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <h5 class="text-16 fw-500 mb-4">Other Services</h5>
+                  <div class="d-flex flex-column">
+                    <a href="#">Offers</a>
+                    <a href="#" class="pt-2">Tour List</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Sj5Ujf5SMKhPt8U4v");
+      })();
+    </script>
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

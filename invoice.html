@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/invoice.css" />
+  </head>
+  <body>
+    <section class="py-70 bg-blue-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-11">
+            <div class="d-flex justify-content-end">
+              <button class="button px-4 py-3 dark-1 bg-blue-1 text-white">
+                Print
+                <i class="fa-solid fa-print text-20 ms-2"></i>
+              </button>
+            </div>
+            <div class="bg-white rounded-1 mt-5">
+              <div class="p-5">
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <h2>Katrina Tours</h2>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-auto">
+                        <div class="text-26 fw-600">Invoice #</div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="text-18 fw-500 text-light-1">
+                          0043128641
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-between pt-5">
+                  <div class="col-auto">
+                    <div class="text-15 text-light-1">Invoice date:</div>
+                    <div class="text-15 fw-500 lh-15">03/10/2022</div>
+                  </div>
+                  <div class="col-xl-4">
+                    <div class="text-15 text-light-1">Due date:</div>
+                    <div class="text-15 fw-500 lh-15">03/10/2022</div>
+                  </div>
+                </div>
+                <div class="row pt-5">
+                  <div class="col-12">
+                    <table class="table w-100">
+                      <thead class="bg-blue-1-05 text-blue-1">
+                        <tr>
+                          <th>Description</th>
+                          <th>Price</th>
+                          <th>VAT (20%)</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td datatype="Description">Standard Plan</td>
+                          <td datatype="Price">$443.00</td>
+                          <td datatype="VAT (20%)">$921.80</td>
+                          <td datatype="Total">$9243</td>
+                        </tr>
+                        <tr>
+                          <td datatype="Description">Extra Plan</td>
+                          <td datatype="Price">$413.00</td>
+                          <td datatype="VAT (20%)">$912.80</td>
+                          <td datatype="Total">$5943</td>
+                        </tr>
+                        <tr>
+                          <td class="text-18 fw-500" colspan="3">Total Due</td>
+                          <td class="text-18 fw-500">$9,750</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
